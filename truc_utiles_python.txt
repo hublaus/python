@@ -1,0 +1,20 @@
+(installer pip)
+
+python : 
+-> créer environnement virtuel
+python -m venv my-venv            //création env virtuel
+source my-venv/bin/activate       //(se place dedans) (deactivate pour sortir, "deactivate" tout court)
+
+python -m pip list                //(voir liste packages)
+
+puis installer librairies dedans
+my-venv/bin/pip install some-python-library
+
+
+python -m pip show numpy            //vérifier si numpy installé, et affichage version
+python -m pip install numpy         //installer numpy
+
+python -m venv test_venv
+source test_venv/bin/activate
+pip install numpy==1.26.0
+
